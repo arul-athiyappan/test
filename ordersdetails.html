@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Eassycart Online Marketplace</title>
+<!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries --> 
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// --> 
+<!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+     <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<!-- Favicon icon -->
+<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+<!-- Google font-->
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="assets/vendors/styles/core.css">
+
+<!-- themify -->
+<link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+
+<!-- iconfont -->
+<link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+
+<!-- simple line icon -->
+<link rel="stylesheet" type="text/css" href="assets/icon/simple-line-icons/css/simple-line-icons.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href=" https://cdn.datatables.net/select/1.3.3/css/select.dataTables.min.css">
+
+<!-- Required Fremwork -->
+<link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Weather css -->
+<link href="assets/css/svg-weather.css" rel="stylesheet">
+
+<!-- Style.css -->
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+<!-- Responsive.css-->
+<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+
+<body class="sidebar-mini fixed">
+<div class="loader-bg">
+  <div class="loader-bar"> </div>
+</div>
+<div class="wrapper"> 
+  <!-- Navbar-->
+  <header class="main-header-top hidden-print"> <a href="index.html" class="logo"><img class="img-fluid able-logo" src="assets/images/logo.png" alt="Theme-logo"></a>
+    <nav class="navbar navbar-static-top"> 
+      <!-- Sidebar toggle button--> 
+      <a href="#!" data-toggle="offcanvas" class="sidebar-toggle"></a> 
+      
+      <!-- Navbar Right Menu-->
+      <div class="navbar-custom-menu f-right">
+        <ul class="top-nav">
+          <!--Notification Menu-->
+          
+          <li class="dropdown notification-menu"> <a href="#!" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle"> <i class="icon-bell"></i> <span class="badge badge-danger header-badge">9</span> </a>
+            <ul class="dropdown-menu">
+              <li class="not-head">You have <b class="text-primary">4</b> new notifications.</li>
+              <li class="bell-notification"> <a href="javascript:;" class="media"> <span class="media-left media-icon"> <img class="img-circle" src="assets/images/avatar-1.png" alt="User Image"> </span>
+                <div class="media-body"><span class="block">Lisa sent you a mail</span><span class="text-muted block-time">2min ago</span></div>
+                </a> </li>
+              <li class="bell-notification"> <a href="javascript:;" class="media"> <span class="media-left media-icon"> <img class="img-circle" src="assets/images/avatar-2.png" alt="User Image"> </span>
+                <div class="media-body"><span class="block">Server Not Working</span><span class="text-muted block-time">20min ago</span></div>
+                </a> </li>
+              <li class="bell-notification"> <a href="javascript:;" class="media"><span class="media-left media-icon"> <img class="img-circle" src="assets/images/avatar-3.png" alt="User Image"> </span>
+                <div class="media-body"><span class="block">Transaction xyz complete</span><span class="text-muted block-time">3 hours ago</span></div>
+                </a> </li>
+              <li class="not-footer"> <a href="#!">See all notifications.</a> </li>
+            </ul>
+          </li>
+          <!-- User Menu-->
+          <li class="dropdown"> <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image"> <span><img class="img-circle " src="assets/images/avatar-1.png" style="width:40px;" alt="User Image"></span> <span>John <b>Doe</b> <i class=" icofont icofont-simple-down"></i></span> </a>
+            <ul class="dropdown-menu settings-menu">
+              <li><a href="#!"><i class="icon-settings"></i> Settings</a></li>
+              <li><a href="#"><i class="icon-user"></i> Profile</a></li>
+              <li><a href="#"><i class="icon-envelope-open"></i> My Messages</a></li>
+              <li class="p-0">
+                <div class="dropdown-divider m-0"></div>
+              </li>
+              <li><a href="#"><i class="icon-lock"></i> Lock Screen</a></li>
+              <li><a href="login1.html"><i class="icon-logout"></i> Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Side-Nav-->
+  <aside class="main-sidebar hidden-print ">
+    <section class="sidebar" id="sidebar-scroll"> 
+      <!-- Sidebar Menu-->
+      <ul class="sidebar-menu">
+        <li class="treeview"> <a class="waves-effect waves-dark" href="index.html"> <i class="icon-speedometer"></i><span> Dashboard</span> </a> </li>
+        <li class="treeview"><a class="waves-effect waves-dark" href="#"><i class="ti-gift"></i><span>Product Management</span><i class="icon-arrow-down"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="waves-effect waves-dark" href="product-list.html"><i class="icon-arrow-right"></i>Products List</a>
+              <ul class="porinprokst">
+                <li><a class="waves-effect waves-dark" href="product-list.html"><i class="icon-arrow-right"></i>All Products</a></li>
+                <li><a class="waves-effect waves-dark" href="products-on-moderation.html"><i class="icon-arrow-right"></i>Products for Approval</a></li>
+                <li><a class="waves-effect waves-dark" href="approved-products.html"><i class="icon-arrow-right"></i>Approved Products</a></li>
+                <li><a class="waves-effect waves-dark" href="disapproved-products.html"><i class="icon-arrow-right"></i>Disapproved Products</a></li>
+                <li><a class="waves-effect waves-dark" href="products-that-vendors-can-sell.html"><i class="icon-arrow-right"></i>Multivendor Products</a></li>
+              </ul>
+            </li>
+            <li><a class="waves-effect waves-dark" href="add-product.html"><i class="icon-arrow-right"></i>Add Product</a></li>
+            <li><a class="waves-effect waves-dark" href="feature-list.html"><i class="icon-arrow-right"></i>Feature List</a>
+              <ul class="porinprokst">
+                <li><a class="waves-effect waves-dark" href="feature.html"><i class="icon-arrow-right"></i>Create Feature</a></li>
+              </ul>
+            </li>
+            <li><a class="waves-effect waves-dark" href="variations.html"><i class="icon-arrow-right"></i>Variations</a>
+            </li>
+          </ul>
+        </li>
+        <li class="treeview"><a class="waves-effect waves-dark" href="#"><i class="icon-book-open"></i><span> Price Management</span><i class="icon-arrow-down"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="waves-effect waves-dark" href="price-management.html"><i class="icon-arrow-right"></i> Price List</a></li>
+          </ul>
+        </li>
+        <li class="treeview"><a class="waves-effect waves-dark" href="#!"><i class="ti-direction-alt"></i><span> Category Management</span><i class="icon-arrow-down"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="waves-effect waves-dark" href="category-list.html"><i class="icon-arrow-right"></i> Category List</a></li>
+            <li><a class="waves-effect waves-dark" href="add-category.html"><i class="icon-arrow-right"></i> Add Category</a></li>
+          </ul>
+        </li>
+        <li class="treeview active"><a class="waves-effect waves-dark" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+          <span>Orders</span><i class="icon-arrow-down"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="waves-effect waves-dark" href="view-orders.html"><i class="icon-arrow-right"></i>Orders List</a></li>
+            <li><a class="waves-effect waves-dark" href="status.html"><i class="icon-arrow-right"></i>Status</a></li>
+          </ul>
+        </li>
+        <li class="treeview"><a class="waves-effect waves-dark" href="#"><i class="icon-user"></i><span>User Management</span><i class="icon-arrow-down"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="waves-effect waves-dark" href="user-groups.html"><i class="icon-arrow-right"></i>User Groups</a></li>
+            <li><a class="waves-effect waves-dark" href="administrators.html"><i class="icon-arrow-right"></i>Administrators</a></li>
+            <li><a class="waves-effect waves-dark" href="vendor.html"><i class="icon-arrow-right"></i>Vendor Administrators</a></li>
+            <li><a class="waves-effect waves-dark" href="customers.html"><i class="icon-arrow-right"></i>Customers</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </aside>
+  <!-- Sidebar chat start -->
+  
+  <div class="showChat_inner">
+    <div class="media chat-inner-header"> <a class="back_chatBox"> <i class="icofont icofont-rounded-left"></i> Josephin Doe </a> </div>
+    <div class="media chat-messages"> <a class="media-left photo-table" href="#!"> <img class="media-object img-circle m-t-5" src="assets/images/avatar-1.png" alt="Generic placeholder image">
+      <div class="live-status bg-success"></div>
+      </a>
+      <div class="media-body chat-menu-content">
+        <div class="">
+          <p class="chat-cont">I'm just looking around. Will you tell me something about yourself?</p>
+          <p class="chat-time">8:20 a.m.</p>
+        </div>
+      </div>
+    </div>
+    <div class="media chat-messages">
+      <div class="media-body chat-menu-reply">
+        <div class="">
+          <p class="chat-cont">I'm just looking around. Will you tell me something about yourself?</p>
+          <p class="chat-time">8:20 a.m.</p>
+        </div>
+      </div>
+      <div class="media-right photo-table"> <a href="#!"> <img class="media-object img-circle m-t-5" src="assets/images/avatar-2.png" alt="Generic placeholder image">
+        <div class="live-status bg-success"></div>
+        </a> </div>
+    </div>
+    <div class="media chat-reply-box">
+      <div class="md-input-wrapper">
+        <input type="text" class="md-form-control" id="inputEmail" name="inputEmail">
+        <label>Share your thoughts</label>
+        <span class="highlight"></span> <span class="bar"></span>
+        <button type="button" class="chat-send waves-effect waves-light"> <i class="icofont icofont-location-arrow f-20 "></i> </button>
+        <button type="button" class="chat-send waves-effect waves-light"> <i class="icofont icofont-location-arrow f-20 "></i> </button>
+      </div>
+    </div>
+  </div>
+  <!-- Sidebar chat end-->
+  <div class="content-wrapper"> 
+    <!-- Container-fluid starts --> 
+    <!-- Main content starts -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="main-header">
+          <h4>Orders 137998</h4>
+        </div>
+      </div>
+      <div class="row"> 
+        <!-- Area Chart start -->
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="col-md-12 tp_fltrsctn">
+                
+            
+              </div>
+              <div class="prodslsttblprt">
+                <div id="adprdcttbprt">
+                <div class="tab">
+                  <div class="col-md-12" style="margin-bottom:25px;">
+              <ul class="nav nav-tabs no-border" role="tablist">
+                  <li class="nav-item"> <a class="nav-link active text-blue" data-toggle="tab" href="#General" role="tab" aria-selected="true">General</a> </li>
+                  <!-- <li class="nav-item"> <a class="nav-link text-blue" data-toggle="tab" href="#Features" role="tab" aria-selected="false">Add-ons</a> </li> -->
+                  <li class="nav-item"> <a class="nav-link text-blue" data-toggle="tab" href="#selr-com" role="tab" aria-selected="false">Sellers Comission Data</a> </li>
+                </ul>
+                <div class="tab-content">
+
+                  <div class="tab-pane fade show active in" id="content_general" role="tabpanel">
+                    <div class="row-fluid">
+                      <div class="table-responsive-wrapper">
+                        
+                         <table class="table ul-product">
+                           
+                            <thead>
+                    <tr>
+                        <th >Product</th>
+                        <th>Price</th>
+                        <th class="center" >Quantity</th>
+                        <th class="right" >&nbsp;Subtotal</th>
+                    </tr>
+                </thead> 
+                <tbody>
+                  <tr>
+                    <td  class="pro-dat-info">
+                      <div class="pro-images">
+                        <a href="#">
+                          <img src="./assets/images/Buck-870.png" alt="">
+                        </a>
+                      </div>
+                      <div class="pro-details">
+                          <a href="#">BUCK Bones Knife 870 - Camo Color</a>
+                          <div class="code-data">
+                            <p class="code-info">CODE:KI 029</p>
+                          </div>
+
+                      </div>
+
+                    </td>
+                    <td>
+                      <span><i class="fa fa-inr" aria-hidden="true"></i> 899.00</span>
+                    </td>
+                    <td>
+                      1 (1 Shipped)
+                    </td>
+                       <td>
+                      <span><i class="fa fa-inr" aria-hidden="true"></i> 899.00</span>
+                    </td>
+                  </tr>
+
+                </tbody>
+
+
+                         </table>  
+
+                         
+
+
+                      </div>
+
+                       <div class="price-info-data">
+                         
+                        <table class="pull-right clr">
+                           <tbody>
+                             <tr>
+                               <td>&nbsp;</td>
+                               <td><h4>Totals</h4></td>
+                             </tr>
+
+                           </tbody>
+                           <tr>
+                            <td class="">Subtotal :</td>
+                            <td class="pull-right"><i class="fa fa-inr" aria-hidden="true"></i><span> 899.00</span></td>
+                        </tr>
+                        <tr>
+            <td >IGST(18%) :</td>
+            <td class="pull-right"><i class="fa fa-inr" aria-hidden="true"></i><span> 144.77</span></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td><strong>Total:</strong></td>
+            <td class="pull-right total-price"><i class="fa fa-inr" aria-hidden="true"></i><span> <strong>949.00</strong></span></td>
+        </tr>
+
+
+
+                         </table>
+
+                       </div>
+
+
+                       <div class="clearfix Pro-Note">
+                         <div class="col-md-12">
+                           <div class="col-md-6">
+                             <div class="form-group">
+                               <label>Customer Notes</label>
+<textarea class="form-control" placeholder="Short Description"></textarea>
+                             </div>
+
+                           </div>
+                           <div class="col-md-6">
+                             <div class="form-group">
+                               <label>Staff Only Notes</label>
+<textarea class="form-control" placeholder="Short Description">Bulk stock shipped /vaishu/ 04.08.2021</textarea>
+                             </div>
+                           </div>
+                         </div>
+
+                       </div>
+          
+          <div class="clearfix bar-code-info">
+              
+              <div class="col-md-12">
+                <img src="./assets/images/bar-code.png" class="">
+
+              </div>
+
+
+          </div>
+
+
+                    </div>
+
+                  
+
+
+                  <div class="clearfix">
+                    <div class="col-md-12">
+                              <fieldset>
+                                <div class="dropdown m-t-2">
+                                  <label for="">Status</label>
+                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Complete
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <button class="dropdown-item" type="button">Open</button>
+                                    <button class="dropdown-item" type="button">Delivered</button>
+                                    <button class="dropdown-item" type="button">Closed</button>
+                                    <button class="dropdown-item" type="button">Delivered P</button>
+                                    <button class="dropdown-item" type="button">To_Refund</button>
+                                    <button class="dropdown-item" type="button">Processed</button>
+                                    <button class="dropdown-item" type="button">Shipped</button>
+                                    <button class="dropdown-item" type="button">Complete</button>
+                                    <button class="dropdown-item" type="button">Canceled</button>
+                                    <button class="dropdown-item" type="button">Failed</button>
+                                    <button class="dropdown-item" type="button">Issue</button>
+                                    <button class="dropdown-item" type="button">Awaiting call</button>
+                                    <button class="dropdown-item" type="button">Backordered</button>
+                                    <button class="dropdown-item" type="button">Declined</button>
+                                  </div>
+                                </div>
+                                <div class="bg-light container p-15">
+                                  <h6 class="text-black">Payment information </h6>
+                                <div class="col-md-8 clearfix">
+                             <div class="row">
+                              <div class="col-md-4"><label>Method</label></div>
+                              <div class="col-md-8"><label>PayU</label></div>
+
+                             </div>
+                              <div class="row">
+                              <div class="col-md-4"><label>Order status </label></div>
+                              <div class="col-md-8"><label>Open </label></div>
+
+                             </div>
+                              <div class="row">
+                              <div class="col-md-4"><label> Transaction ID</label></div>
+                              <div class="col-md-8"><label>361028046</label></div>
+                             </div>
+                                <div class="row">
+                              <div class="col-md-4"><label> Customer email </label></div>
+                              <div class="col-md-8"><label>ashokw16@gmail.com</label></div>
+                             </div>
+                           </div>
+                                </div>
+                              </fieldset>
+                            </div>
+
+                  </div>
+                  <div class="clearfix">
+                      <div class="col-md-12">
+                        <fieldset >
+                                <legend>Manager</legend>
+                                <div class="disp-flex m-t-10  m-b-2">
+                                  <input class="form-control" type="search" placeholder="SivaGaneshan Eassycart" aria-label="Search" readonly="readonly">
+                                  <button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-lg"> <i class="fa fa-bars" aria-hidden="true"></i> </button>
+                                </div>
+                                
+                              </fieldset>
+                              </div>
+                  </div>
+
+
+                  <div class="clearfix">
+                    <div class="col-md-12">
+                              <fieldset>
+                                <div class="bg-light container p-15">
+                                  <h6 class="text-black">Shipping information</h6>
+                                <div class="col-md-8 clearfix">
+                             <div class="row">
+                              <div class="col-md-12"><label>Cashcow Augmentation Systems</label></div>
+                           </div>
+                              <div class="row">
+                              <div class="col-md-4"><label>Method</label></div>
+                              <div class="col-md-8"><label>Spike Shipping</label></div>
+
+                             </div>
+                             
+                           </div>
+                                </div>
+                                 <div class="bg-light container p-15 clearfix">
+                                  <h6 class="text-black">Track on website</h6>
+                                <div class="col-md-8 clearfix">
+                              <div class="row">
+                              <div class="col-md-4"><label>INDIASPEEDPOST NO</label></div>
+                              <div class="col-md-8"><label>Spike Shipping</label></div>
+
+                             </div>
+                                <div class="row">
+                              <div class="col-md-4"><label></label></div>
+                              <div class="col-md-8"><label>: EN428885427IN</label></div>
+
+                             </div>
+                             
+                           </div>
+                                </div>
+                              </fieldset>
+
+
+
+                            </div>
+
+                  </div>
+
+                  <div class="clearfix">
+                    <div class="col-md-12">
+                              <fieldset>
+                                 <div class="bg-light container p-15">
+                                  <h6 class="text-black">Customer information</h6>
+                                <div class="col-md-8 clearfix">
+                              <div class="row">
+                              <div class="col-md-1"><i class="fa fa-address-book" aria-hidden="true"></i></div>
+                              <div class="col-md-11">
+                                <ul>
+                                  <li><a href="">Ashok W, </a></li>
+                                  <li><a href="mailto:ashokw16@gmail.com">ashokw16@gmail.com</a></li>
+                                  <li><span>IP address: 1.39.170.194 </span><li>
+                                    <li><span>Phone:</span><a href="tel:9986850009"> 9986850009</a> </li>
+                                </ul>
+                              </div>
+                                
+
+                              </div>
+
+                             </div>
+                             
+                           </div>
+
+ <div class="bg-light container p-15 clearfix">
+                                  <h6 class="text-black">Shipping address</h6>
+                                <div class="col-md-8 clearfix">
+                              <div class="row">
+                              <div class="col-md-1"><i class="fa fa-truck" aria-hidden="true"></i>
+</div>
+                              <div class="col-md-11">
+                                <ul>
+                                  <li><span>Ashok Wadeyar</span></li>
+                                  <li>
+                                    <span>Shri Basaveshwar Sahakari Bank Head Offficr
+                                      Navanagar
+                                      Bagalkot, Karnataka 587103
+                                      India 
+                                    Nearby Landmark: Near Court
+                                    </span>
+                                  </li>
+                                    <li><span>Phone:</span><a href="tel:9986850009"> 9986850009</a> </li>
+                                </ul>
+                              </div>
+                                
+
+                              </div>
+
+                             </div>
+                             
+                           </div>
+                           <div class="bg-light container p-15 clearfix">
+                                  <h6 class="text-black">Billing address</h6>
+                                <div class="col-md-8 clearfix">
+                              <div class="row">
+                              <div class="col-md-1"><i class="fa fa-tags" aria-hidden="true"></i></div>
+                              <div class="col-md-11">
+                                <ul>
+                                  <li><span>Ashok Wadeyar</span></li>
+                                  <li>
+                                    <span>Shri Basaveshwar Sahakari Bank Head Offficr
+                                      Navanagar
+                                      Bagalkot, Karnataka 587103
+                                      India
+                                      Nearby Landmark:Near Court 
+                                    </span>
+                                  </li>
+                                    <li><span>Phone:</span><a href="tel:9986850009"> 9986850009</a> </li>
+                                </ul>
+                              </div>
+                                
+
+                              </div>
+
+                             </div>
+                             
+                           </div>
+
+                                
+                              </fieldset>
+
+
+
+                            </div>
+                          </div>
+
+</div>
+
+<div id="selr-com" class="tab-pane fade" role="tabpanel">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Category Comission</th>
+        <th scope="col">Shipping Fee</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>₹125.86</td>
+        <td>  <div class="form-group col-md-6">
+          <input type="text" class="form-control"  placeholder="50.00">
+        </div></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+        
+                </div>
+
+              </div>
+
+              </div>
+              </div>
+
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+        <!-- Area Chart end --> 
+        
+      </div>
+    </div>
+    <!-- Main content ends --> 
+    <!-- Container-fluid ends --> 
+  </div>
+</div>
+<div class="modal" id="AdvancedSearchPopup">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content"> 
+      <!-- Modal Header -->
+      <div class="modal-header model-staus-info">
+        <h4 class="modal-title">Advanced Search</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body" style="overflow: hidden;">
+        <div class="model-info">
+          <div class="col-md-12">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Find results with</label>
+                <input type="text" class="form-control"  placeholder="">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="m-l-10">Price (₹)</label>
+                <div class="col-md-12 p-0">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control"  placeholder="Min">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control"  placeholder="Max">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label>Search in category</label>
+                <div class="input-group mb-3">
+                  <input disabled type="text" class="form-control col-8" style="float: left;width: 65%;" placeholder="All Categories" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <div class="input-group-append col-4">
+                    <button type="button" class="btn btn-outline-primary my-2 my-sm-0" data-toggle="modal" data-target="#AdSearchAddCtgry"> + </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group over-hidden">
+                <label>Search in</label>
+                <div class="col-md-12 p-0">
+                  <div class="col-md-3">
+                    <div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Product name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Short description</label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Full description</label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Keywords</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Search by product filters</label>
+                <input type="text" class="form-control"  placeholder="">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="productlistpopup">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content"> 
+      <!-- Modal Header -->
+      <div class="modal-header model-staus-info">
+        <h4 class="modal-title">Add categories</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body" style="overflow: hidden;">
+        <div class="model-info m-b-20"> sdfsdfsdf </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Add categories</button> --> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="prodctslstcatrry">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content"> 
+      
+      <!-- Modal Header -->
+      <div class="modal-header model-staus-info">
+        <h4 class="modal-title">Categories</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body" style="overflow: hidden;">
+        <div class="Action-add-category">
+          <table class="table">
+            <tr>
+              <td width="3%"><div class="checkbox-fade fade-in-primary">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                </div></td>
+              <td>Camera & Photo Accessories <small>Electronics / Camera & Accessories</small></td>
+            </tr>
+            <tr>
+              <td><div class="checkbox-fade fade-in-primary">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                </div></td>
+              <td>Coffee Machine <small>Home & Kitchen / Kitchen Appliances</small></td>
+            </tr>
+            </tbody>
+            
+          </table>
+        </div>
+        <form class="form disp-flex">
+          <input class="form-control" type="search" placeholder="Type to search, or click the button on the right for advanced search" aria-label="Search">
+          <button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#add-more-categories"> <i class="fa fa-bars" aria-hidden="true"></i> </button>
+        </form>
+      </div>
+      
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Reset</button>
+        <button type="button" class="btn btn-primary">Apply</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="add-more-categories">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content"> 
+      <!-- Modal Header -->
+      <div class="modal-header model-staus-info">
+        <h4 class="modal-title">Add categories</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body" style="overflow: hidden;">
+        <div class="model-info">
+          <div class="Action-add-category">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></th>
+                  <th>Categories</th>
+                  <th class="right-content">Products</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Electronics</td>
+                  <td class="right-content">6</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Automobiles & Industrial</td>
+                  <td class="right-content">16</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Men</td>
+                  <td class="right-content">0</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Women</td>
+                  <td class="right-content">1</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Kids</td>
+                  <td class="right-content">4</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Fitness & More</td>
+                  <td class="right-content">4</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Home & Kitchen</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Pets & Others</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Add categories</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="AdSearchAddCtgry">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content"> 
+      <!-- Modal Header -->
+      <div class="modal-header model-staus-info">
+        <h4 class="modal-title">Add Categories</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body" style="overflow: hidden;">
+        <div class="model-info">
+          <div class="Action-add-category">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></th>
+                  <th>Categories</th>
+                  <th class="right-content">Products</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Electronics</td>
+                  <td class="right-content">6</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Automobiles & Industrial</td>
+                  <td class="right-content">16</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Men</td>
+                  <td class="right-content">0</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Women</td>
+                  <td class="right-content">1</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Kids</td>
+                  <td class="right-content">4</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Fitness & More</td>
+                  <td class="right-content">4</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Home & Kitchen</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Pets & Others</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Add categories</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div style="overflow: scroll;" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-black" id="exampleModalLongTitle">Advanced products search</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body over-hidden">
+        <form>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label>Find results with</label>
+              <input type="text" class="form-control"  placeholder="">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="m-l-10">Price (₹)</label>
+              <div class="col-md-12 p-0">
+                <div class="col-md-6">
+                  <input type="text" class="form-control"  placeholder="Min">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control"  placeholder="Max">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label>Search in category</label>
+              <div class="input-group mb-3">
+                <input disabled type="text" class="form-control col-8" style="float: left;width: 65%;" placeholder="All Categories" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append col-4">
+                  <button type="button" class="btn btn-outline-primary my-2 my-sm-0" data-toggle="modal" data-target="#add-more-categories"> + </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="col-md-12">
+          <p>
+            <button type="button" class="btn btn-outline-primary  m-t-10">Search</button>
+            <button type="button" data-toggle="collapse" data-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample" class="btn btn-primary  m-t-10">+</button>
+          </p>
+          <div class="collapse" id="collapseExample12">
+            <div class="card no-shadow">
+              <div class="col-md-12 m-t-20">
+                <label>Search in</label>
+                <br>
+                <div class="checkbox-fade fade-in-primary mr-right">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> Product name</label>
+                </div>
+                <div class="checkbox-fade fade-in-primary mr-right">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> Short description </label>
+                </div>
+                <div class="checkbox-fade fade-in-primary mr-right">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Full description </label>
+                </div>
+                <div class="checkbox-fade fade-in-primary mr-right">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Keywords </label>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-md-6 m-t-20">
+                  <div class="form-group">
+                    <label class="m-l-10">Search by product code</label>
+                    <input type="text" class="form-control m-l-10"  placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-6 m-t-20">
+                  <div class="form-group">
+                    <label class="m-l-10">Shipping freight (₹) </label>
+                    <div class="col-md-12 p-0">
+                      <div class="col-md-6">
+                        <input type="text" class="form-control"  placeholder="">
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control"  placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-t-10">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="m-l-10">Popularity</label>
+                    <div class="col-md-12 p-0">
+                      <div class="col-md-6">
+                        <input type="text" class="form-control"  placeholder="">
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control"  placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="m-l-10">Weight (gm)</label>
+                    <div class="col-md-12 p-0">
+                      <div class="col-md-6">
+                        <input type="text" class="form-control"  placeholder="">
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control"  placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-t-10">
+                <div class="col-md-6 m-t-20">
+                  <div class="form-group"> 
+                    <!-- <label class="m-l-10">Subcategories</label> -->
+                    <div class="checkbox-fade fade-in-primary mr-right m-l-10 ">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> Subcategories</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="m-l-10">Quantity</label>
+                    <div class="col-md-12 p-0">
+                      <div class="col-md-6">
+                        <input type="text" class="form-control"  placeholder="">
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control"  placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-t-10">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="m-l-10"> Search by vendor</label>
+                    <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px;">
+                      <option value="AK">All vendors (common product)</option>
+                      <option value="HI">3 - Strips</option>
+                      <option value="CA">3dfx Animation</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="m-l-10">Free shipping</label>
+                    <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px;">
+                      <option value="s">Yes</option>
+                      <option value="n">no</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-t-10">
+                <div class="col-md-6">
+                  <div class="form-group  m-t-10">
+                    <label class="col-md-6"> Purchased in orders</label>
+                    <a type="button" data-toggle="modal" data-target=".bd-example-modal-lg2" class="btn btn-primary text-white" >+ Add Orders</a> </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="m-l-10">Status</label>
+                    <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px;">
+                      <option value="s">Active</option>
+                      <option value="n">Disabled</option>
+                      <option value="n">Hidden</option>
+                      <option value="n">Requires Approval</option>
+                      <option value="n">Disapproved</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-t-10">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Tag</label>
+                    <input type="text" class="form-control"  placeholder="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="m-l-10">Sort by</label>
+                    <div class="col-md-12 p-0">
+                      <div class="col-md-6">
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px;">
+                          <option value="s">List Price</option>
+                          <option value="n">Name</option>
+                          <option value="n">Price</option>
+                          <option value="n">CODE</option>
+                          <option value="n">Quantity</option>
+                          <option value="n">Status</option>
+                          <option value="n">Best Seller</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px;">
+                          <option value="s">asc</option>
+                          <option value="n">Description</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-t-10">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="m-l-10">Sales Amount</label>
+                    <div class="col-md-12 p-0">
+                      <div class="col-md-6">
+                        <input type="text" class="form-control"  placeholder="">
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control"  placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="m-l-10">Creation date</label>
+                    <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px;">
+                      <option value="s">All</option>
+                      <option value="n">This day</option>
+                      <option value="n">This Week</option>
+                      <option value="n">This Month</option>
+                      <option value="n">This Year</option>
+                      <option value="n">Yesterday</option>
+                      <option value="n">Previous Week</option>
+                      <option value="n">Previous Month</option>
+                      <option value="n">Previous Year</option>
+                      <option value="n">Last 24 Hours</option>
+                      <option value="n">Last 7 days</option>
+                      <option value="n">Last 30 days</option>
+                      <option value="n">Custom</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row m-t-10">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="m-l-10">Select dates</label>
+                    <div class="col-md-12 p-0">
+                      <div class="col-md-6">
+                        <div class="form-control-wrapper">
+                          <input type="text" id="date" class="form-control floating-label" placeholder="Date" data-dtp="dtp_Dpm0w">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-control-wrapper">
+                          <input type="text" id="date" class="form-control floating-label" placeholder="Date" data-dtp="dtp_Dpm0w">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Updated in the last</label>
+                    <input type="text" class="form-control"  placeholder="">
+                  </div>
+                </div>
+              </div>
+              <div class="row m-t-10">
+                <div class="col-md-6">
+                  <div class="col-md-4">
+                    <label>Updated in the last</label>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <select class="form-select multi-select" multiple aria-label="multiple select example">
+                      <option selected>Catalog item</option>
+                      <option value="1">Variation of a Catalog item</option>
+                      <option value="2">Vendor Offer</option>
+                      <option value="3">Vendor variation Offer</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="col-md-6"> Belongs to catalog item</label>
+                    <a class="btn btn-primary text-white" >+ Add Products</a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 m-t-20">
+          <ul class="ul-product">
+            <li class="bord-bottom">
+              <div class="checkbox-fade fade-in-primary">
+                <label>
+                  <input type="checkbox" value="">
+                  <span class="cr m-r-10"><i class="cr-icon fa fa-check txt-primary"></i></span><b>Product name</b></label>
+              </div>
+            </li>
+            <li class="bord-bottom m-t-10 ">
+              <div class="checkbox-fade fade-in-primary">
+                <label>
+                  <input type="checkbox" value="">
+                  <span class="cr m-r-10"><i class="cr-icon fa fa-check txt-primary"></i></span>Time Handle/Folding Tripod With 1/4 Screw For Insta360 One X Camera </br>
+                  SE - 77009848</label>
+              </div>
+            </li>
+            <li class="bord-bottom m-t-10 ">
+              <div class="checkbox-fade fade-in-primary">
+                <label>
+                  <input type="checkbox" value="">
+                  <span class="cr m-r-10"><i class="cr-icon fa fa-check txt-primary"></i></span>Time Handle/Folding Tripod With 1/4 Screw For Insta360 One X Camera </br>
+                  SE - 77009848</label>
+              </div>
+            </li>
+            <li class="bord-bottom m-t-10 ">
+              <div class="checkbox-fade fade-in-primary">
+                <label>
+                  <input type="checkbox" value="">
+                  <span class="cr m-r-10"><i class="cr-icon fa fa-check txt-primary"></i></span>Time Handle/Folding Tripod With 1/4 Screw For Insta360 One X Camera </br>
+                  SE - 77009848</label>
+              </div>
+            </li>
+            <li class="bord-bottom m-t-10 ">
+              <div class="checkbox-fade fade-in-primary">
+                <label>
+                  <input type="checkbox" value="">
+                  <span class="cr m-r-10"><i class="cr-icon fa fa-check txt-primary"></i></span>Time Handle/Folding Tripod With 1/4 Screw For Insta360 One X Camera </br>
+                  SE - 77009848</label>
+              </div>
+            </li>
+            <li class="bord-bottom m-t-10 ">
+              <div class="checkbox-fade fade-in-primary">
+                <label>
+                  <input type="checkbox" value="">
+                  <span class="cr m-r-10"><i class="cr-icon fa fa-check txt-primary"></i></span>Time Handle/Folding Tripod With 1/4 Screw For Insta360 One X Camera </br>
+                  SE - 77009848</label>
+              </div>
+            </li>
+            <li class="bord-bottom m-t-10 ">
+              <div class="checkbox-fade fade-in-primary">
+                <label>
+                  <input type="checkbox" value="">
+                  <span class="cr m-r-10"><i class="cr-icon fa fa-check txt-primary"></i></span>Time Handle/Folding Tripod With 1/4 Screw For Insta360 One X Camera </br>
+                  SE - 77009848</label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary m-l-10 m-r-10">Add Products and close</button>
+        <button type="button" class="btn btn-primary">Add Products</button>
+      </div>
+    </div>
+  </div>
+</di
+
+<script src="assets/vendors/scripts/core.js"></script> 
+
+<!-- Required Jqurey --> 
+<script src="assets/plugins/Jquery/dist/jquery.min.js"></script> 
+<script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script> 
+<script src="assets/plugins/tether/dist/js/tether.min.js"></script> 
+
+<!-- Required Fremwork --> 
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+
+<!-- Scrollbar JS--> 
+<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script> 
+<script src="assets/plugins/jquery.nicescroll/jquery.nicescroll.min.js"></script> 
+
+<!--classic JS--> 
+<script src="assets/plugins/classie/classie.js"></script> 
+
+<!-- notification --> 
+<script src="assets/plugins/notification/js/bootstrap-growl.min.js"></script> 
+
+<!-- Sparkline charts --> 
+<script src="assets/plugins/jquery-sparkline/dist/jquery.sparkline.js"></script> 
+
+<!-- Counter js  --> 
+<script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script> 
+<script src="assets/plugins/countdown/js/jquery.counterup.js"></script> 
+
+<!-- custom js --> 
+<script type="text/javascript" src="assets/js/main.min.js"></script> 
+<script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script> 
+<script type="text/javascript" src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script> 
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable( {
+        columnDefs: [ {
+            orderable: false,
+            className: 'select-checkbox',
+            targets:   0
+        } ],
+        select: {
+            style:    'os',
+            selector: 'td:first-child'
+        },
+        order: [[ 1, 'asc' ]],
+        scrollX: true
+    } );
+} );
+</script> 
+<script type="text/javascript">
+      SyntaxHighlighter.all();
+   </script>
+</body>
+</html>

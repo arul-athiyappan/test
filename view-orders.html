@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Eassycart Online Marketplace</title>
+<!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries --> 
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// --> 
+<!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+     <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<!-- Favicon icon -->
+<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+<!-- Google font-->
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="assets/vendors/styles/core.css">
+
+<!-- themify -->
+<link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+
+<!-- iconfont -->
+<link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+
+<!-- simple line icon -->
+<link rel="stylesheet" type="text/css" href="assets/icon/simple-line-icons/css/simple-line-icons.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href=" https://cdn.datatables.net/select/1.3.3/css/select.dataTables.min.css">
+
+<!-- Required Fremwork -->
+<link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Weather css -->
+<link href="assets/css/svg-weather.css" rel="stylesheet">
+
+<!-- Style.css -->
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+<!-- Responsive.css-->
+<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+
+<body class="sidebar-mini fixed">
+<div class="loader-bg">
+  <div class="loader-bar"> </div>
+</div>
+<div class="wrapper"> 
+  <!-- Navbar-->
+  <header class="main-header-top hidden-print"> <a href="index.html" class="logo"><img class="img-fluid able-logo" src="assets/images/logo.png" alt="Theme-logo"></a>
+    <nav class="navbar navbar-static-top"> 
+      <!-- Sidebar toggle button--> 
+      <a href="#!" data-toggle="offcanvas" class="sidebar-toggle"></a> 
+      
+      <!-- Navbar Right Menu-->
+      <div class="navbar-custom-menu f-right">
+        <ul class="top-nav">
+          <!--Notification Menu-->
+          
+          <li class="dropdown notification-menu"> <a href="#!" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle"> <i class="icon-bell"></i> <span class="badge badge-danger header-badge">9</span> </a>
+            <ul class="dropdown-menu">
+              <li class="not-head">You have <b class="text-primary">4</b> new notifications.</li>
+              <li class="bell-notification"> <a href="javascript:;" class="media"> <span class="media-left media-icon"> <img class="img-circle" src="assets/images/avatar-1.png" alt="User Image"> </span>
+                <div class="media-body"><span class="block">Lisa sent you a mail</span><span class="text-muted block-time">2min ago</span></div>
+                </a> </li>
+              <li class="bell-notification"> <a href="javascript:;" class="media"> <span class="media-left media-icon"> <img class="img-circle" src="assets/images/avatar-2.png" alt="User Image"> </span>
+                <div class="media-body"><span class="block">Server Not Working</span><span class="text-muted block-time">20min ago</span></div>
+                </a> </li>
+              <li class="bell-notification"> <a href="javascript:;" class="media"><span class="media-left media-icon"> <img class="img-circle" src="assets/images/avatar-3.png" alt="User Image"> </span>
+                <div class="media-body"><span class="block">Transaction xyz complete</span><span class="text-muted block-time">3 hours ago</span></div>
+                </a> </li>
+              <li class="not-footer"> <a href="#!">See all notifications.</a> </li>
+            </ul>
+          </li>
+          <!-- User Menu-->
+          <li class="dropdown"> <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image"> <span><img class="img-circle " src="assets/images/avatar-1.png" style="width:40px;" alt="User Image"></span> <span>John <b>Doe</b> <i class=" icofont icofont-simple-down"></i></span> </a>
+            <ul class="dropdown-menu settings-menu">
+              <li><a href="#!"><i class="icon-settings"></i> Settings</a></li>
+              <li><a href="#"><i class="icon-user"></i> Profile</a></li>
+              <li><a href="#"><i class="icon-envelope-open"></i> My Messages</a></li>
+              <li class="p-0">
+                <div class="dropdown-divider m-0"></div>
+              </li>
+              <li><a href="#"><i class="icon-lock"></i> Lock Screen</a></li>
+              <li><a href="login1.html"><i class="icon-logout"></i> Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Side-Nav-->
+  <aside class="main-sidebar hidden-print ">
+    <section class="sidebar" id="sidebar-scroll"> 
+      <!-- Sidebar Menu-->
+      <ul class="sidebar-menu">
+        <li class="treeview"> <a class="waves-effect waves-dark" href="index.html"> <i class="icon-speedometer"></i><span> Dashboard</span> </a> </li>
+        <li class="treeview"><a class="waves-effect waves-dark" href="#"><i class="ti-gift"></i><span>Product Management</span><i class="icon-arrow-down"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="waves-effect waves-dark" href="product-list.html"><i class="icon-arrow-right"></i>Products List</a>
+              <ul class="porinprokst">
+                <li><a class="waves-effect waves-dark" href="product-list.html"><i class="icon-arrow-right"></i>All Products</a></li>
+                <li><a class="waves-effect waves-dark" href="products-on-moderation.html"><i class="icon-arrow-right"></i>Products for Approval</a></li>
+                <li><a class="waves-effect waves-dark" href="approved-products.html"><i class="icon-arrow-right"></i>Approved Products</a></li>
+                <li><a class="waves-effect waves-dark" href="disapproved-products.html"><i class="icon-arrow-right"></i>Disapproved Products</a></li>
+                <li><a class="waves-effect waves-dark" href="products-that-vendors-can-sell.html"><i class="icon-arrow-right"></i>Multivendor Products</a></li>
+              </ul>
+            </li>
+            <li><a class="waves-effect waves-dark" href="add-product.html"><i class="icon-arrow-right"></i>Add Product</a></li>
+            <li><a class="waves-effect waves-dark" href="feature-list.html"><i class="icon-arrow-right"></i>Feature List</a>
+              <ul class="porinprokst">
+                <li><a class="waves-effect waves-dark" href="feature.html"><i class="icon-arrow-right"></i>Create Feature</a></li>
+              </ul>
+            </li>
+            <li><a class="waves-effect waves-dark" href="variations.html"><i class="icon-arrow-right"></i>Variations</a> </li>
+          </ul>
+        </li>
+        <li class="treeview"><a class="waves-effect waves-dark" href="#"><i class="icon-book-open"></i><span> Price Management</span><i class="icon-arrow-down"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="waves-effect waves-dark" href="price-management.html"><i class="icon-arrow-right"></i> Price List</a></li>
+          </ul>
+        </li>
+        <li class="treeview"><a class="waves-effect waves-dark" href="#!"><i class="ti-direction-alt"></i><span> Category Management</span><i class="icon-arrow-down"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="waves-effect waves-dark" href="category-list.html"><i class="icon-arrow-right"></i> Category List</a></li>
+            <li><a class="waves-effect waves-dark" href="add-category.html"><i class="icon-arrow-right"></i> Add Category</a></li>
+          </ul>
+        </li>
+        <li class="treeview active"><a class="waves-effect waves-dark" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> <span>Orders</span><i class="icon-arrow-down"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="waves-effect waves-dark" href="view-orders.html"><i class="icon-arrow-right"></i>Orders List</a></li>
+            <li><a class="waves-effect waves-dark" href="status.html"><i class="icon-arrow-right"></i>Status</a></li>
+          </ul>
+        </li>
+        <li class="treeview"><a class="waves-effect waves-dark" href="#"><i class="icon-user"></i><span>User Management</span><i class="icon-arrow-down"></i></a>
+          <ul class="treeview-menu">
+            <li><a class="waves-effect waves-dark" href="user-groups.html"><i class="icon-arrow-right"></i>User Groups</a></li>
+            <li><a class="waves-effect waves-dark" href="administrators.html"><i class="icon-arrow-right"></i>Administrators</a></li>
+            <li><a class="waves-effect waves-dark" href="vendor.html"><i class="icon-arrow-right"></i>Vendor Administrators</a></li>
+            <li><a class="waves-effect waves-dark" href="customers.html"><i class="icon-arrow-right"></i>Customers</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </aside>
+  <!-- Sidebar chat start -->
+  
+  <div class="showChat_inner">
+    <div class="media chat-inner-header"> <a class="back_chatBox"> <i class="icofont icofont-rounded-left"></i> Josephin Doe </a> </div>
+    <div class="media chat-messages"> <a class="media-left photo-table" href="#!"> <img class="media-object img-circle m-t-5" src="assets/images/avatar-1.png" alt="Generic placeholder image">
+      <div class="live-status bg-success"></div>
+      </a>
+      <div class="media-body chat-menu-content">
+        <div class="">
+          <p class="chat-cont">I'm just looking around. Will you tell me something about yourself?</p>
+          <p class="chat-time">8:20 a.m.</p>
+        </div>
+      </div>
+    </div>
+    <div class="media chat-messages">
+      <div class="media-body chat-menu-reply">
+        <div class="">
+          <p class="chat-cont">I'm just looking around. Will you tell me something about yourself?</p>
+          <p class="chat-time">8:20 a.m.</p>
+        </div>
+      </div>
+      <div class="media-right photo-table"> <a href="#!"> <img class="media-object img-circle m-t-5" src="assets/images/avatar-2.png" alt="Generic placeholder image">
+        <div class="live-status bg-success"></div>
+        </a> </div>
+    </div>
+    <div class="media chat-reply-box">
+      <div class="md-input-wrapper">
+        <input type="text" class="md-form-control" id="inputEmail" name="inputEmail">
+        <label>Share your thoughts</label>
+        <span class="highlight"></span> <span class="bar"></span>
+        <button type="button" class="chat-send waves-effect waves-light"> <i class="icofont icofont-location-arrow f-20 "></i> </button>
+        <button type="button" class="chat-send waves-effect waves-light"> <i class="icofont icofont-location-arrow f-20 "></i> </button>
+      </div>
+    </div>
+  </div>
+  <!-- Sidebar chat end-->
+  <div class="content-wrapper"> 
+    <!-- Container-fluid starts --> 
+    <!-- Main content starts -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="main-header">
+          <h4>Orders</h4>
+        </div>
+      </div>
+      <div class="row"> 
+        <!-- Area Chart start -->
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <div class="col-md-12 tp_fltrsctn">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <select class="selectpicker form-control" data-size="5" data-style="btn-outline-secondary" multiple data-max-options="3">
+                      <option selected disabled>All</option>
+                      <option>SKU</option>
+                      <option>Product Name</option>
+                      <option>Actual Price</option>
+                      <option>List Price</option>
+                      <option>Scheduled Price</option>
+                      <option>Created on</option>
+                      <option>Created by</option>
+                      <option>Updated on</option>
+                      <option>Status</option>
+                      <option>Actions </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-9 f-right text-right">
+                  <ul class="tpstingsetng">
+                    <li class="dropdown"> <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image rhttpstngprt"> <span><i class="fa fa-cog" aria-hidden="true"></i> Setting</span> </a>
+                      <ul class="dropdown-menu settings-menu rhttpstng">
+                        <li><a href="#!">Invoice bulk print</a></li>
+                        <li><a href="#!">Invoice bulk print (PDF)</a></li>
+                        <li><a href="#!">Packing slip bulk print</a></li>
+                        <li><a href="#!">View purchased products</a></li>
+                        <li><a href="#!">Export selected</a></li>
+                        <li><a href="#!">Delete selected</a></li>
+                        <li><a href="#!">Export to Quickbooks</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="tpstingsetng">
+                    <li class="dropdown"> <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="drop icon-circle drop-image rhttpstngprt"><i class="fa fa-cog" aria-hidden="true"></i> Merge Guest Order</a> </li>
+                  </ul>
+                  <a href="add-new-order.html" class="btn btn-success" style="margin:0 10px 0 20px;"><i class="fa fa-plus" aria-hidden="true"></i></a> <a href="#" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></a> </div>
+              </div>
+              <div class="prodslsttblprt">
+                <div class="col-md-12">
+                  <div class="col-md-12">
+                    <div class="advnctsech"><a href="#" data-toggle="modal" data-target="#advanced-search-box">Advanced Search</a></div>
+                  </div>
+                </div>
+                <table id="example" class="display nowrap scrltblres actn_icnclr" style="width:100%">
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" name=""></th>
+                      <th>ID</th>
+                      <th>Status</th>
+                      <th>Date</th>
+                      <th>Customer</th>
+                      <th>Phone</th>
+                      <th>Total</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td><a href="#" class="underlined">Order #137998</a>
+                        <p>Invoice #13579</p>
+                        <p><small>Cashcow Augmentation Systems</small></p></td>
+                      <td class="pstionrlative"><span class="Action-status ropdown-toggle " data-toggle="dropdown" aria-expanded="false">Complete<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        <div class="dropdown-menu">
+                          <ul class="Action-Status-list">
+                            <li> <a href="#">Open</a> </li>
+                            <li> <a href="#">Delivered</a> </li>
+                            <li> <a href="#">Closed</a> </li>
+                            <li> <a href="#">Delivered P</a> </li>
+                            <li> <a href="#">To_Refund</a> </li>
+                            <li> <a href="#">COD</a> </li>
+                            <li> <a href="#">Processed</a> </li>
+                            <li> <a href="#">Shipped</a> </li>
+                            <li> <a href="#">Complete</a> </li>
+                            <li> <a href="#">Canceled</a> </li>
+                            <li><a href="#">Failed</a></li>
+                            <li><a href="#">Incomplete</a></li>
+                          </ul>
+                        </div></td>
+                      <td>September 20,<br>
+                        <small> 2030, 09:27:00 PM</small></td>
+                      <td><a href="#"> @W Ashok</a></td>
+                      <td><a href="#">9986850009</a></td>
+                      <td>₹949.00</td>
+                      <td><a href="#"> <i class="icofont icofont-ui-edit"></i></a> <a href="#"><i class="icon-trash"></i></a> <a href="#" data-toggle="modal" data-target="#productlistpopup"> <i class="icon-eye"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><a href="#" class="underlined">Order #139633</a>
+                        <p>Invoice #139633</p>
+                        <p><small>Cashcow Augmentation Systems</small></p></td>
+                      <td class="pstionrlative"><span class="Action-status ropdown-toggle " data-toggle="dropdown" aria-expanded="false">Complete<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        <div class="dropdown-menu">
+                          <ul class="Action-Status-list">
+                            <li> <a href="#">Open</a> </li>
+                            <li> <a href="#">Delivered</a> </li>
+                            <li> <a href="#">Closed</a> </li>
+                            <li> <a href="#">Delivered P</a> </li>
+                            <li> <a href="#">To_Refund</a> </li>
+                            <li> <a href="#">COD</a> </li>
+                            <li> <a href="#">Processed</a> </li>
+                            <li> <a href="#">Shipped</a> </li>
+                            <li> <a href="#">Complete</a> </li>
+                            <li> <a href="#">Canceled</a> </li>
+                            <li><a href="#">Failed</a></li>
+                            <li><a href="#">Incomplete</a></li>
+                          </ul>
+                        </div></td>
+                      <td>October 20,<br>
+                        <small> 2024, 11:32:00 AM</small></td>
+                      <td><a href="#"> @ Kohli Karan</a></td>
+                      <td><a href="#">9695559559</a></td>
+                      <td> ₹949.00 </td>
+                      <td><a href="#"> <i class="icofont icofont-ui-edit"></i></a> <a href="#"><i class="icon-trash"></i></a> <a href="#" data-toggle="modal" data-target="#productlistpopup"> <i class="icon-eye"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><a href="ordersdetails.html" class="underlined">Order #137920</a>
+                        <p>Invoice #13579</p>
+                        <p><small>Cashcow Augmentation Systems</small></p></td>
+                      <td class="pstionrlative"><span class="Action-status ropdown-toggle " data-toggle="dropdown" aria-expanded="false">Complete<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        <div class="dropdown-menu">
+                          <ul class="Action-Status-list">
+                            <li> <a href="#">Open</a> </li>
+                            <li> <a href="#">Delivered</a> </li>
+                            <li> <a href="#">Closed</a> </li>
+                            <li> <a href="#">Delivered P</a> </li>
+                            <li> <a href="#">To_Refund</a> </li>
+                            <li> <a href="#">COD</a> </li>
+                            <li> <a href="#">Processed</a> </li>
+                            <li> <a href="#">Shipped</a> </li>
+                            <li> <a href="#">Complete</a> </li>
+                            <li> <a href="#">Canceled</a> </li>
+                            <li><a href="#">Failed</a></li>
+                            <li><a href="#">Incomplete</a></li>
+                          </ul>
+                        </div></td>
+                      <td>September 20, <br>
+                        <small>2029, 05:30:00 PM</small></td>
+                      <td><a href="#"> @ Dicholkar Mandar</a></td>
+                      <td><a href="#">09167659973</a></td>
+                      <td> ₹949.00 </td>
+                      <td><a href="ordersdetails.html"> <i class="icofont icofont-ui-edit"></i></a> <a href="#"><i class="icon-trash"></i></a> <a href="#" data-toggle="modal" data-target="#productlistpopup"> <i class="icon-eye"></i></a></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><a href="#" class="underlined">Order #137998</a>
+                        <p>Invoice #13579</p>
+                        <p><small>Cashcow Augmentation Systems</small></p></td>
+                      <td class="pstionrlative"><span class="Action-status ropdown-toggle " data-toggle="dropdown" aria-expanded="false">Complete<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        <div class="dropdown-menu">
+                          <ul class="Action-Status-list">
+                            <li> <a href="#">Open</a> </li>
+                            <li> <a href="#">Delivered</a> </li>
+                            <li> <a href="#">Closed</a> </li>
+                            <li> <a href="#">Delivered P</a> </li>
+                            <li> <a href="#">To_Refund</a> </li>
+                            <li> <a href="#">COD</a> </li>
+                            <li> <a href="#">Processed</a> </li>
+                            <li> <a href="#">Shipped</a> </li>
+                            <li> <a href="#">Complete</a> </li>
+                            <li> <a href="#">Canceled</a> </li>
+                            <li><a href="#">Failed</a></li>
+                            <li><a href="#">Incomplete</a></li>
+                          </ul>
+                        </div></td>
+                      <td>September 20, <br>
+                        <small>2030, 09:27:00 PM</small></td>
+                      <td><a href="#"> @W Ashok</a></td>
+                      <td><a href="#">9986850009</a></td>
+                      <td> ₹949.00 </td>
+                      <td><a href="#"> <i class="icofont icofont-ui-edit"></i></a> <a href="#"><i class="icon-trash"></i></a> <a href="#" data-toggle="modal" data-target="#productlistpopup"> <i class="icon-eye"></i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Area Chart end --> 
+        
+      </div>
+    </div>
+    <!-- Main content ends --> 
+    <!-- Container-fluid ends --> 
+  </div>
+</div>
+<div class="modal" id="advanced-search-box">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content"> 
+      
+      <!-- Modal Header -->
+      <div class="modal-header model-staus-info">
+        <h4 class="modal-title">Advanced search</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body" style="overflow: hidden;">
+        <form>
+          <div class="ad-Search-box-list">
+            <div class="ad-Search-item-list">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Customer</label>
+                    <input type="text" class="form-control" placeholder="Customer">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="text" class="form-control" placeholder="E-mail">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Phone</label>
+                    <input type="text" class="form-control" placeholder="Customer">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Total (₹)</label>
+                    <div class="clear" style="clear: both;"> <span class="col-md-7 p-0">
+                      <input type="text" class="form-control" placeholder="">
+                      </span> <span class="col-md-1">
+                      <label>-</label>
+                      </span> <span class="col-md-4 ">
+                      <input type="text" class="form-control" placeholder="">
+                      </span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ad-Search-item-list">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Manager</label>
+                    <input type="text" class="form-control" placeholder="Customer">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label></label>
+                    <br>
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>No manager assigned </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ad-Search-item-list">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Period</label>
+                    <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px;">
+                      <option value="All">All</option>
+                      <option value="">- - - - -</option>
+                      <option value="">This day</option>
+                      <option value="This week">This week</option>
+                      <option value="m">This month</option>
+                      <option value="y">This year</option>
+                      <option value="">- - - - -</option>
+                      <option value="HH">Last 24 hours</option>
+                      <option value="Hw">Last 7 days</option>
+                      <option value="HM">Last 30 days</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Select dates</label>
+                    <div class="clear" style="clear: both;"> <span class="col-md-6 p-0">
+                      <div class="form-control-wrapper">
+                        <div class="input-group date input-group-date-custom">
+                          <input type="text" class="form-control" placeholder="DD/MM/YYYY">
+                          <span class="input-group-addon bg-primary"> <i class="icofont icofont-clock-time"></i> </span> </div>
+                      </div>
+                      </span> <span class="col-md-6">
+                      <div class="input-group date input-group-date-custom">
+                        <input type="text" class="form-control" placeholder="DD/MM/YYYY">
+                        <span class="input-group-addon bg-primary"> <i class="icofont icofont-clock-time"></i> </span> </div>
+                      </span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ad-Search-item-list">
+              <div class="col-md-12 p-0">
+                <h6 class="mb-1">Order status</h6>
+              </div>
+              <div class="row clear">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Open</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Delivered</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Closed</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Delivered P</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>To_Refund</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>COD</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Processed</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Shipped</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Complete</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Canceled</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Failed</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Issue</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Awaiting call</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Backordered</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Declined</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Incomplete</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--ad-Search-item-list-->
+            
+            <div class="ad-Search-item-list">
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li>
+                      <div class="form-group">
+                        <label>Tax exempt</label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px;">
+                          <option value="">--</option>
+                          <option value="yes">yes</option>
+                          <option value="No">No</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>Order IDs</label>
+                        <input type="text" class="form-control" placeholder="Order IDs">
+                      </div>
+                      <div class="form-group">
+                        <label>Company</label>
+                        <input type="text" class="form-control" placeholder="Company">
+                      </div>
+                      <div class="form-group">
+                        <label>Search by vendor</label>
+                        <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px;"
+   
+      
+                        <option value="1">All vendors</option>
+                        <option value="1-1"> 123ply</option>
+                        <option value="1-2">3 - Strips</option>
+                        <option value="1-3">3dfx Animation</option>
+                        <option value="1-4">A & T Video Networks Pvt. Ltd.</option>
+                        <option value="1-5">A S Traders</option>
+                        </select>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>
+                      <div class="form-group m-0">
+                        <div class="checkbox-fade fade-in-primary mt-3">
+                          <label></label>
+                          <br>
+                          <label>
+                            <input type="checkbox" value="">
+                            <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Has credit memo</label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Credit memo ID</label>
+                        <input type="text" class="form-control" placeholder="Credit memo ID">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="form-group m-0">
+                        <div class="checkbox-fade fade-in-primary mt-3">
+                          <label>
+                            <input type="checkbox" value="">
+                            <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Has invoice</label>
+                        </div>
+                      </div>
+                      <div class="form-group mt-n1">
+                        <label>Invoice ID</label>
+                        <input type="text" class="form-control" placeholder="Invoice ID">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="ad-Search-item-list">
+              <div class="col-md-12 p-0">
+                <h6 class="mb-1">Shipping</h6>
+              </div>
+              <div class="row clear">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>General Shipping</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Delhivery</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Standard shipping</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Spike Shipping</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Custom shipping method</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>FedEx 2nd day</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>UPS 3day Select</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>USPS Media Mail</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ad-Search-item-list-->                        
+            <div class="ad-Search-item-list">
+              <div class="col-md-12 p-0">
+                <h6 class="mb-1">Payment methods</h6>
+              </div>
+              <div class="row clear">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>CashFree</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>PayU</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>other</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Paytm</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Credit card</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Phone ordering</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Money Order</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>C.O.D</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Purchase Order</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Personal Check</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Government Check</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Traveller's Check</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--ad-Search-item-list--->
+            
+            <div class="ad-Search-item-list">
+              <div class="col-md-12 p-0">
+                <h6 class="mb-1">Ordered products</h6>
+              </div>
+              <div class="row clear">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Tax exempt</label>
+                    <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px;">
+                      <option value="0">--</option>
+                      <option value="Recently updated">Recently updated</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group pull-right">
+                    <button type="button" class="btn btn-success waves-effect waves-light m-t-30" data-toggle="modal" data-target="#AddBrand" data-placement="top" title="" data-original-title="Add"><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--ad-Search-item-list-->
+            
+            <div class="ad-Search-item-list">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <div class="checkbox-fade fade-in-primary mt-3">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span>Show Aliexpress Orders</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--ad-Search-item-list-->
+            
+            <div class="ad-Search-item-list">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="form-group">
+                    <label>Gift certificate code:</label>
+                    <div class="clear" style="clear: both;"> <span class="col-md-5 p-0">
+                      <input type="text" class="form-control" placeholder="">
+                      </span> <span class="col-md-5 ">
+                      <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px;">
+                        <option value="0">--</option>
+                        <option value="Purchased">Purchased</option>
+                        <option value="Used">Used</option>
+                      </select>
+                      </span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <div class="col-md-6 left-item">
+          <label>Save this search as</label>
+          <input type="text" class="form-control sm-input-text" placeholder="Name">
+          <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Save</button>
+        </div>
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Search</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="productlistpopup">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content"> 
+      <!-- Modal Header -->
+      <div class="modal-header model-staus-info">
+        <h4 class="modal-title">Add categories</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body" style="overflow: hidden;">
+        <div class="model-info m-b-20"> sdfsdfsdf </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Add categories</button> --> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="prodctslstcatrry">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content"> 
+      
+      <!-- Modal Header -->
+      <div class="modal-header model-staus-info">
+        <h4 class="modal-title">Categories</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body" style="overflow: hidden;">
+        <div class="Action-add-category">
+          <table class="table">
+            <tr>
+              <td width="3%"><div class="checkbox-fade fade-in-primary">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                </div></td>
+              <td>Camera & Photo Accessories <small>Electronics / Camera & Accessories</small></td>
+            </tr>
+            <tr>
+              <td><div class="checkbox-fade fade-in-primary">
+                  <label>
+                    <input type="checkbox" value="">
+                    <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                </div></td>
+              <td>Coffee Machine <small>Home & Kitchen / Kitchen Appliances</small></td>
+            </tr>
+            </tbody>
+            
+          </table>
+        </div>
+        <form class="form disp-flex">
+          <input class="form-control" type="search" placeholder="Type to search, or click the button on the right for advanced search" aria-label="Search">
+          <button type="button" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#add-more-categories"> <i class="fa fa-bars" aria-hidden="true"></i> </button>
+        </form>
+      </div>
+      
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Reset</button>
+        <button type="button" class="btn btn-primary">Apply</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="add-more-categories">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content"> 
+      <!-- Modal Header -->
+      <div class="modal-header model-staus-info">
+        <h4 class="modal-title">Add categories</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body" style="overflow: hidden;">
+        <div class="model-info">
+          <div class="Action-add-category">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></th>
+                  <th>Categories</th>
+                  <th class="right-content">Products</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Electronics</td>
+                  <td class="right-content">6</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Automobiles & Industrial</td>
+                  <td class="right-content">16</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Men</td>
+                  <td class="right-content">0</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Women</td>
+                  <td class="right-content">1</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Kids</td>
+                  <td class="right-content">4</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Fitness & More</td>
+                  <td class="right-content">4</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Home & Kitchen</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Pets & Others</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Add categories</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="AdSearchAddCtgry">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content"> 
+      <!-- Modal Header -->
+      <div class="modal-header model-staus-info">
+        <h4 class="modal-title">Add Categories</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body" style="overflow: hidden;">
+        <div class="model-info">
+          <div class="Action-add-category">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></th>
+                  <th>Categories</th>
+                  <th class="right-content">Products</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Electronics</td>
+                  <td class="right-content">6</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Automobiles & Industrial</td>
+                  <td class="right-content">16</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Men</td>
+                  <td class="right-content">0</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Women</td>
+                  <td class="right-content">1</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Kids</td>
+                  <td class="right-content">4</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Fitness & More</td>
+                  <td class="right-content">4</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Home & Kitchen</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>Pets & Others</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+                <tr>
+                  <td width="5%"><div class="checkbox-fade fade-in-primary">
+                      <label>
+                        <input type="checkbox" value="">
+                        <span class="cr"><i class="cr-icon fa fa-check txt-primary"></i></span> </label>
+                    </div></td>
+                  <td><i class="fa fa-caret-right" aria-hidden="true"></i>AB: Sports and outdoors</td>
+                  <td class="right-content">5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Add categories</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/vendors/scripts/core.js"></script> 
+
+<!-- Required Jqurey --> 
+<script src="assets/plugins/Jquery/dist/jquery.min.js"></script> 
+<script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script> 
+<script src="assets/plugins/tether/dist/js/tether.min.js"></script> 
+
+<!-- Required Fremwork --> 
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+
+<!-- Scrollbar JS--> 
+<script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script> 
+<script src="assets/plugins/jquery.nicescroll/jquery.nicescroll.min.js"></script> 
+
+<!--classic JS--> 
+<script src="assets/plugins/classie/classie.js"></script> 
+
+<!-- notification --> 
+<script src="assets/plugins/notification/js/bootstrap-growl.min.js"></script> 
+
+<!-- Sparkline charts --> 
+<script src="assets/plugins/jquery-sparkline/dist/jquery.sparkline.js"></script> 
+
+<!-- Counter js  --> 
+<script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script> 
+<script src="assets/plugins/countdown/js/jquery.counterup.js"></script> 
+
+<!-- custom js --> 
+<script type="text/javascript" src="assets/js/main.min.js"></script> 
+<script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script> 
+<script type="text/javascript" src="https://cdn.datatables.net/select/1.3.3/js/dataTables.select.min.js"></script> 
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable( {
+        columnDefs: [ {
+            orderable: false,
+            className: 'select-checkbox',
+            targets:   0
+        } ],
+        select: {
+            style:    'os',
+            selector: 'td:first-child'
+        },
+        order: [[ 1, 'asc' ]],
+        scrollX: true
+    } );
+} );
+</script> 
+<script type="text/javascript">
+      SyntaxHighlighter.all();
+   </script>
+</body>
+</html>
